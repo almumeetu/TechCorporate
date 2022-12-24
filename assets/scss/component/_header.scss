@@ -1,0 +1,246 @@
+@use "../abstract" as *;
+
+header{
+    & .main-menu{
+        text-align: center;
+        & nav{
+            & ul{
+                padding-top: 25px;
+                padding-bottom: 25px;
+                & li{
+                    display: inline;
+                    padding-left: 51px;
+                    padding-right: 50px;
+                    background: #2166a9;
+                    padding-top: 23px;
+                    padding-bottom: 23px;
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    & a{
+                       color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    & .header-bottom-area{
+        padding-top: 20px;
+        & .logo{
+            
+            & img{
+               
+            }
+            & span{
+                margin-left: 25px;
+                color: #000;
+            }
+        }
+        & .header-right{
+            & span{
+                color: #000;
+                font-weight: 200;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// Banner scss start Here
+.banner-area{
+    margin-top: 20px;
+    & .banner-img{
+        background: #bedaff;
+        padding: 30px 13px;
+        position: relative;
+        & img{
+            width: 100%;
+        }
+        & .banner-overflow{
+            position: absolute;
+            top: 27px;
+            left: 27px;
+            height: 180px;
+            width: 330px;
+            background: #2166a9;
+            padding: 7px;
+            & h4{
+                color: #fff;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                border-bottom: 1px solid #bedaff;
+                padding-bottom: 12px;
+            }
+            & p{
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+        & .banner-link{
+            position: absolute;
+            right: 30px;
+	        bottom: -30px;
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}
+// Banner scss End Here
+
+
+// Blog scss start Here
+
+.blog-area{
+    & .blog{
+        border-bottom: 1px solid #bedaff;
+        padding-bottom: 30px;
+        & .blog-content{
+            padding: 17px 20px;
+            background: #e8e8e8;
+            & .blog-title{
+                & h4{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #000;
+                    padding-bottom: 14px;
+                    border-bottom: 2px solid #bedaff;
+                }
+            }
+            & .blog-img{
+                padding-top: 10px;
+                & img{
+
+                }
+            }
+            & p{
+                font-size: 12px;
+                line-height: 19.2px;
+                padding-top: 20px;
+                color: #000;
+            }
+            & .blog-btn{
+                text-align: end;
+                & a{
+                    font-size: 13px;
+                    color: #2166a9;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+// About scss start Here
+
+.about-area{
+    & .about-b{
+        & .about{
+            
+            & .about-img{
+                & img{
+                    width: 100%;
+                }
+            }
+            & .about-content{
+                & .about-title{
+                    padding-bottom: 5px;
+                    & span{
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: #000; 
+                    }
+                }
+                & p{
+                    font-size: 12px;
+                    line-height: 19.2px;
+                    color: #333333;
+                    padding-top: 5px;
+                    border-top: 2px solid #dfedff;
+                }
+                & .about-btn{
+                    text-align: end;
+                    & a{
+                        color: #2166a9;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        & .categories{
+            margin-left: 30px;
+            & .categories-title{
+                padding-bottom: 5px;
+                & span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #000; 
+                    
+                }
+            }
+            & .categories-content{
+                border-top: 2px solid #dfedff;
+                & ul{
+                    & li{
+                        & a{
+                            color: #2166a9;
+                            font-size: 12px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// About scss start Here
+
+
+
+// Gallery Scss Start Here
+
+.gallery-area{
+    & .gallery{
+        & img{
+            width: 100%;
+            padding-left: 12px;
+            &:first-child{
+                padding-left: 0px;
+            }
+        }
+    }
+}
+// Gallery Scss End Here
+
+// Copyright Area Start Here
+
+ .copyright-area{
+        & .copyright{
+            background: #2166a9;
+            padding: 20px 10px;
+            & .c-l{
+                & p{
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #fff;
+                    margin-bottom: 0px;
+                }
+            }
+            & .c-r{
+                text-align: end;
+                & p{
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #fff;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+// copyright Scss Start Here
+
+
