@@ -897,24 +897,29 @@ p {
 header .main-menu {
   text-align: center;
 }
-header .main-menu nav ul {
-  padding-top: 25px;
-  padding-bottom: 25px;
+header .main-menu .menu-toggle-btn {
+  float: right;
+  height: 90px;
+  line-height: 90px !important;
+  color: #000;
+  font-size: 26px;
+  display: none;
 }
-header .main-menu nav ul li {
+header .main-menu .navigation-menu {
+  padding-top: 23px !important;
+}
+header .main-menu .navigation-menu a {
+  padding-top: 23px !important;
   display: inline;
   padding-left: 51px;
   padding-right: 50px;
   background: #2166a9;
-  padding-top: 23px;
   padding-bottom: 23px;
   margin-right: 10px;
-}
-header .main-menu nav ul li:last-child {
-  margin-right: 0;
-}
-header .main-menu nav ul li a {
   color: #fff;
+}
+header .main-menu .navigation-menu a:last-child {
+  margin-right: 0;
 }
 header .header-bottom-area {
   padding-top: 20px;
@@ -987,6 +992,9 @@ header .header-bottom-area .header-right span {
 }
 .blog-area .blog .blog-content .blog-img {
   padding-top: 10px;
+}
+.blog-area .blog .blog-content .blog-img img {
+  width: 100%;
 }
 .blog-area .blog .blog-content p {
   font-size: 12px;
@@ -1074,5 +1082,76 @@ header .header-bottom-area .header-right span {
   color: #fff;
   margin-bottom: 0px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  header .header-bottom-area .header-right {
+    text-align: left;
+  }
+  .banner-area .banner-img .banner-overflow {
+    display: none;
+  }
+  .about-area .about-b .categories {
+    margin-left: 0;
+  }
+  .copyright-area {
+    text-align: center;
+  }
+  .copyright-area .copyright .c-r {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .about-content {
+    padding-left: 0px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  header .header-bottom-area .header-right {
+    text-align: left;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .header-bottom-area .header-right {
+    text-align: left;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  header .main-menu .navigation-menu a {
+    background: none;
+    display: block;
+  }
+  header .main-menu .menu-toggle-btn {
+    display: block;
+  }
+  header .main-menu .navigation-menu {
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    background: #172b4d;
+    top: 90px;
+    right: 0;
+    display: none;
+    padding: 20px 40px;
+    z-index: 99;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  header .main-menu .navigation-menu::before {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #172b4d;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+  header .main-menu .navigation-menu.active {
+    display: block;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=style.css.map */

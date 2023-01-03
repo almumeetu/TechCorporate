@@ -27,6 +27,16 @@
 
 ****************************************************/
 
+
+///////////////////////////////////
+
+$(".menu-toggle-btn").click(function(){
+	$(this).toggleClass("fa-times");
+	$(".navigation-menu").toggleClass("active");
+ });
+
+////////////////////////////////////
+
 (function ($) {
 	("use strict");
 
@@ -41,8 +51,8 @@
 	// Mobile Menu Js
 	$("#mobile-menu").meanmenu({
 		meanMenuContainer: ".mobile-menu",
-		meanScreenWidth: "1199",
-		meanExpand: ['<i class="fal fa-plus"></i>'],
+		meanScreenWidth: "920",
+		meanExpand: ['<i class="fas fa-bars"></i>'],
 	});
 	$("#mobile-menu2").meanmenu({
 		meanMenuContainer: ".mobile-menu2",
